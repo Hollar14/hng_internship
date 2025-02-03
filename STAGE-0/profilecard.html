@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="profilecard.css" />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/icons/square-x-twitter?f=brands&s=solid"
+    />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="./asset/MY PASSPORT.jpg"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+        class="profile-picture"
+      />
+      <h2 data-testid="fullName">Lawal Isa Oladipupo</h2>
+      <p data-testid="jobTitle" class="job-title">Senior Front-End Engineer</p>
+      <p data-testid="shortBio" class="bio">
+        A self-motivated IT professional with keen interest in Front-End Web
+        Development, with experience in developing mobile responsive web
+        applications. I am proficient in writing languages such as CSS, HTML,
+        JavaScript, React Js, as well as strong skills and ability in writing
+        clean and efficient code. I have the ability to work in a team and
+        independently to achieve goals in an accurate and timely manner.
+      </p>
+      <p data-testid="currentLocation" class="location">Lagos, Nigeria</p>
+
+      <div class="social-links" data-testid="socialLinks">
+        <a href="https://linkedin.com/in/isa-lawal/" target="_blank"
+          ><span class="iconify" data-icon="logos:linkedin"></span
+        ></a>
+        <a
+          href="mailto:ilawal667@gmail.com"
+          data-testid="emailAddress"
+          class="email"
+          ><span class="iconify" data-icon="mdi:email"></span
+        ></a>
+        <a href="https://github.com/Hollar14" target="_blank"
+          ><span class="iconify" data-icon="bi:github"></span
+        ></a>
+        <a href="https://x.com/law_tricks?s=21" target="_blank"
+          ><span class="iconify" data-icon="logos:x"></span
+        ></a>
+      </div>
+
+      <p data-testid="currentTimeUTC" class="utc-time">
+        Current Time (UTC): <span id="utc-time"></span>
+      </p>
+    </div>
+
+    <script src="profilecard.js"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  </body>
+</html>
